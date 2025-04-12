@@ -1,67 +1,85 @@
 :root {
-    --primary-dark: #1c0e3b;
-    --primary-accent: #3e2c78;
-    --hover-accent: #5a3ca3;
-    --cta-red: #f44336;
-    --cta-dark-red: #c62828;
-    --whatsapp-green: #25D366;
-    --whatsapp-green-dark: #1EBE57;
+  --primary-dark: #1c0e3b;
+  --primary-accent: #3e2c78;
+  --hover-accent: #5a3ca3;
+  --cta-red: #f44336;
+  --cta-dark-red: #c62828;
+  --whatsapp-green: #25D366;
+  --whatsapp-green-dark: #1EBE57;
+}
+
+/* === Floating Buttons (Base Style) === */
+.whatsapp-float,
+.call-float-circle {
+  position: fixed;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* === WhatsApp Button === */
+.whatsapp-float {
+  right: 20px;
+  background-color: var(--whatsapp-green);
+}
+.whatsapp-float:hover {
+  background-color: var(--whatsapp-green-dark);
+  transform: scale(1.1);
+}
+
+/* === Call Button === */
+.call-float-circle {
+  left: 20px;
+  background: linear-gradient(135deg, var(--cta-red), var(--cta-dark-red));
+}
+.call-float-circle:hover {
+  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  transform: scale(1.1);
+}
+
+/* === Mobile & Small Devices === */
+@media screen and (max-width: 768px) {
+  .whatsapp-float,
+  .call-float-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    bottom: 15px;
   }
 
-  /* === Floating Buttons === */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--whatsapp-green);
-    color: white;
-    font-size: 24px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    z-index: 999;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
+  .whatsapp-float {
+    right: 15px;
   }
-  .whatsapp-float:hover {
-    background-color: var(--whatsapp-green-dark);
-    transform: scale(1.1);
-  }
+
   .call-float-circle {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #c30010, #9e0610); /* fallback if --cta vars not defined */
-    color: white;
-    border-radius: 50%;
-    z-index: 999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 20px;
-    transition: all 0.3s ease;
+    left: 15px;
   }
-  
-  .call-float-circle:hover {
-    background: linear-gradient(135deg, #d32f2f, #b71c1c);
-    transform: scale(1.1);
+}
+
+@media screen and (max-width: 480px) {
+  .whatsapp-float,
+  .call-float-circle {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+    bottom: 12px;
   }
-  
-  /* Mobile responsiveness */
-  @media screen and (max-width: 576px) {
-    .call-float-circle {
-      width: 45px;
-      height: 45px;
-      font-size: 18px;
-      bottom: 15px;
-      left: 15px;
-    }
+
+  .whatsapp-float {
+    right: 12px;
   }
-  
+
+  .call-float-circle {
+    left: 12px;
+  }
+}
