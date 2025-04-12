@@ -30,47 +30,38 @@
     background-color: var(--whatsapp-green-dark);
     transform: scale(1.1);
   }
-  
-  .call-float-horizontal {
+  .call-float-circle {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(135deg, var(--cta-red), var(--cta-dark-red));
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #c30010, #9e0610); /* fallback if --cta vars not defined */
     color: white;
-    font-size: 16px;
-    padding: 10px 22px;
-    border-radius: 30px;
+    border-radius: 50%;
     z-index: 999;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    transition: all 0.3s ease;
   }
-  .call-float-horizontal i {
-    margin-right: 10px;
-    font-size: 18px;
-  }
-  .call-float-horizontal:hover {
+  
+  .call-float-circle:hover {
     background: linear-gradient(135deg, #d32f2f, #b71c1c);
-    transform: translateX(-50%) scale(1.05);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1);
   }
   
   /* Mobile responsiveness */
   @media screen and (max-width: 576px) {
-    .call-float-horizontal {
-      padding: 12px 18px;
-      font-size: 14px;
-      max-width: 90%;
-      border-radius: 25px;
-    }
-    .call-float-horizontal i {
-      font-size: 16px;
-      margin-right: 8px;
+    .call-float-circle {
+      width: 45px;
+      height: 45px;
+      font-size: 18px;
+      bottom: 15px;
+      left: 15px;
     }
   }
   
