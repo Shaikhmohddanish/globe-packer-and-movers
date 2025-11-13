@@ -29,11 +29,15 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/accessibility.css" rel="stylesheet">
 
   
 </head>
 
 <body>
+
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-to-main">Skip to main content</a>
 
   <!-- WhatsApp Icon -->
   <a href="https://wa.me/918318376811" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
@@ -44,12 +48,12 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="favicons/globe-logo.png" alt="">
+        <img src="favicons/globe-logo.png" alt="Globe Packers & Movers Logo">
         
       </a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open navigation menu" role="button" tabindex="0"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close navigation menu" role="button" tabindex="0"></i>
+      <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -89,7 +93,7 @@
     <section id="contact" class="contact py-5">
       <div class="container" data-aos="fade-up">
 
-        <iframe style="border:0; width: 100%; height: 340px;" src="https://maps.google.com/maps?q=Shop+no.1+Naik+Nagar+Opp.+Sion+Railway+Station+Main+Puttha+Gali+Sion+West+Mumbai+400022&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 340px;" src="https://maps.google.com/maps?q=Shop+no.1+Naik+Nagar+Opp.+Sion+Railway+Station+Main+Puttha+Gali+Sion+West+Mumbai+400022&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen title="Globe Packers & Movers Location Map"></iframe>
 
         <div class="row gy-4 mt-4">
           <div class="col-lg-4">
@@ -117,25 +121,29 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="https://script.google.com/macros/s/YOUR-DUMMY-API-ID/exec" method="post" class="php-email-form">
+            <form action="https://script.google.com/macros/s/YOUR-DUMMY-API-ID/exec" method="post" class="php-email-form" aria-label="Contact form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  <label for="contact-name" class="visually-hidden">Your Name</label>
+                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="Your Name" required aria-required="true">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  <label for="contact-email" class="visually-hidden">Your Email</label>
+                  <input type="email" id="contact-email" class="form-control" name="email" placeholder="Your Email" required aria-required="true">
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                <label for="contact-subject" class="visually-hidden">Subject</label>
+                <input type="text" id="contact-subject" class="form-control" name="subject" placeholder="Subject" required aria-required="true">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <label for="contact-message" class="visually-hidden">Message</label>
+                <textarea id="contact-message" class="form-control" name="message" rows="5" placeholder="Message" required aria-required="true"></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Submitting...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Thank you! Your message has been received.</div>
+                <div class="loading" role="status" aria-live="polite">Submitting...</div>
+                <div class="error-message" role="alert" aria-live="assertive"></div>
+                <div class="sent-message" role="status" aria-live="polite">Thank you! Your message has been received.</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -180,9 +188,9 @@
         </a>
         <p>Reliable relocation services across India. From household to office shifting, we provide professional service with full insurance and secure transport.</p>
         <div class="social-links d-flex mt-4">
-          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Visit our Instagram page"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white" aria-label="Contact us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
 

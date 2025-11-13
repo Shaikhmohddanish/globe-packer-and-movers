@@ -34,6 +34,7 @@
   <!-- Custom CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/accessibility.css" rel="stylesheet">
 
   <script type="application/ld+json">
     {
@@ -66,15 +67,18 @@
 
 <body>
 
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+
   <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center" aria-label="Globe Packers Home">
         <img src="favicons/globe-logo.png" alt="Globe Packers Logo">
       </a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open navigation menu" role="button" tabindex="0"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close navigation menu" role="button" tabindex="0"></i>
+      <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -86,12 +90,15 @@
     </div>
   </header>
 
+  <!-- Main Content -->
+  <main id="main">
+
   <!-- Hero Section -->
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
       <div class="row gy-4 d-flex justify-content-between">
         <div class="col-lg-6 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">Reliable Packers & Movers From Mumbai</h2>
+          <h1 data-aos="fade-up">Reliable Packers & Movers From Mumbai</h1>
           <p data-aos="fade-up" data-aos-delay="100">Households, Goods & Vehicle Transport • Storage • Insurance • Pan-India Service</p>
           <a href="https://wa.me/918318376811" class="btn btn-primary mt-3" data-aos="fade-up" data-aos-delay="200" target="_blank" rel="noopener">Chat on WhatsApp</a>
         </div>
@@ -242,7 +249,7 @@
   
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
               Do you offer insurance for household items?
             </button>
           </h2>
@@ -253,7 +260,7 @@
   
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
               How soon should I book shifting service?
             </button>
           </h2>
@@ -264,7 +271,7 @@
   
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
               What cities do you provide services in?
             </button>
           </h2>
@@ -275,7 +282,7 @@
   
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
               What packing materials do you use?
             </button>
           </h2>
@@ -286,7 +293,7 @@
   
         <div class="accordion-item">
           <h2 class="accordion-header" id="faq5">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
               Can I track my consignment during transit?
             </button>
           </h2>
@@ -302,7 +309,7 @@
   
 
 <!-- ======= Footer ======= -->
-<footer id="footer" class="footer bg-dark text-white pt-5">
+<footer id="footer" class="footer bg-dark text-white pt-5" role="contentinfo">
   <div class="container">
     <div class="row gy-4">
       <div class="col-lg-5 col-md-12 footer-info">
@@ -311,9 +318,9 @@
         </a>
         <p>Reliable relocation services across India. From household to office shifting, we provide professional service with full insurance and secure transport.</p>
         <div class="social-links d-flex mt-4">
-          <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Visit our Facebook page"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Visit our Instagram page"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white" aria-label="Contact us on WhatsApp"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
 

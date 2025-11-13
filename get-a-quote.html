@@ -28,24 +28,28 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/accessibility.css" rel="stylesheet">
   
   
 </head>
 
 <body>
 
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main" class="skip-to-main">Skip to main content</a>
+
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="favicons/globe-logo.png" alt="">
+        <img src="favicons/globe-logo.png" alt="Globe Packers & Movers Logo">
         
       </a>
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open navigation menu" role="button" tabindex="0"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close navigation menu" role="button" tabindex="0"></i>
+      <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
