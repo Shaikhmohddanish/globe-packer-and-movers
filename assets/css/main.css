@@ -8,8 +8,8 @@
 /* Colors */
 :root {
   --color-default: #0a0d13;
-  --color-primary: #1D0F52;
-  --color-secondary: #1D0F52;
+  --color-primary: #3d2c7a;
+  --color-secondary: #3d2c7a;
 }
 
 /* Smooth scroll behavior */
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #406aff;
+  color: #5c84ff;
   text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #001973;
+  color: #2d4a9e;
   position: relative;
   z-index: 2;
   margin-bottom: 20px;
@@ -195,7 +195,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(13, 66, 255, 0.8);
+  background: rgba(92, 132, 255, 0.8);
   color: #fff;
 }
 
@@ -338,7 +338,7 @@ section {
   .navbar .get-a-quote:hover,
   .navbar .get-a-quote:focus:hover {
     color: #fff;
-    background: #2756ff;
+    background: #5c84ff;
   }
 
   .navbar .dropdown ul {
@@ -550,7 +550,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #001f8d;
+  color: #4a6ed0;
   font-size: 48px;
   transition: 0.3s;
 }
@@ -573,7 +573,7 @@ section {
 
 .featured-services .service-item .description {
   font-size: 15px;
-  color: #132848;
+  color: #2d5080;
   margin-bottom: 10px;
 }
 
@@ -601,7 +601,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   font-family: var(--font-secondary);
-  color: #001f8d;
+  color: #4a6ed0;
 }
 
 .about .content ul {
@@ -626,7 +626,7 @@ section {
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
-  color: #19335c;
+  color: #4a6ed0;
 }
 
 .about .content ul p {
@@ -744,7 +744,7 @@ section {
 }
 
 .services .card a {
-  color: #001973;
+  color: #2d4a9e;
   transition: 0.3;
 }
 
@@ -823,7 +823,7 @@ section {
 .features .features-item h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #001973;
+  color: #2d4a9e;
 }
 
 .features .features-item ul {
@@ -1586,7 +1586,7 @@ section {
 }
 
 .hero form .btn-primary:hover {
-  background-color: #2756ff;
+  background-color: #5c84ff;
 }
 
 .hero .stats-item {

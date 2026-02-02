@@ -1,9 +1,9 @@
 :root {
-  --primary-dark: #1c0e3b;
-  --primary-accent: #3e2c78;
-  --hover-accent: #5a3ca3;
-  --cta-red: #f44336;
-  --cta-dark-red: #c62828;
+  --primary-dark: #3d2c7a;
+  --primary-accent: #5a4a9e;
+  --hover-accent: #7a5fc9;
+  --cta-red: #ff6b6b;
+  --cta-dark-red: #e85555;
   --whatsapp-green: #25D366;
   --whatsapp-green-dark: #1EBE57;
 }
@@ -43,7 +43,7 @@
   background: linear-gradient(135deg, var(--cta-red), var(--cta-dark-red));
 }
 .call-float-circle:hover {
-  background: linear-gradient(135deg, #d32f2f, #b71c1c);
+  background: linear-gradient(135deg, #ff5555, #e84444);
   transform: scale(1.1);
 }
 
